@@ -1,0 +1,26 @@
+.item-cont {
+  width: 90%;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.inner-cont {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+.inner-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+img {
+  width: 20px;
+  height: 20px;
+}
+.delete {
+  align-self: flex-end;
+}
