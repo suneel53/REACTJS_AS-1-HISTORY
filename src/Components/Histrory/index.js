@@ -3,8 +3,12 @@ import './index.css'
 
 class History extends Component {
   render() {
-    const {details} = this.props
-    const {timeAccessed, logoUrl, title, domainUrl} = details
+    const {details, onDelete} = this.props
+    const {id, timeAccessed, logoUrl, title, domainUrl} = details
+
+    const ondel = () => {
+      onDelete(id)
+    }
     return (
       <li className="item-cont">
         <p>{timeAccessed}</p>
@@ -14,11 +18,13 @@ class History extends Component {
             {title} {domainUrl}
           </p>
         </div>
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/delete-img.png"
-          alt="delete"
-          className="delete"
-        />
+        <button type="button" onClick={ondel} data-testid="delete">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/delete-img.png"
+            alt="delete"
+            className="delete"
+          />
+        </button>
       </li>
     )
   }

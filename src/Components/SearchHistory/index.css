@@ -40,12 +40,13 @@
 .cont {
   height: 85vh;
 
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   box-shadow: 10px #ececec;
   border: 0px;
   border-radius: 15px;
+  overflow-y: scroll;
 }
